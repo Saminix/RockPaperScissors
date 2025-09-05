@@ -25,16 +25,16 @@ def play(user_score, computer_score):
     if user == computer:
         computer_score += 1
         user_score += 1
-        return f"It's a draw! Score: You {user_score} - Computer {computer_score}", user_score, computer_score
+        return f"It's a draw! Score: You {user_score} | Computer {computer_score}", user_score, computer_score
 
 
     if is_Win(user, computer):
         user_score += 1
-        return f"You Won! Score: You {user_score} - Computer {computer_score}", user_score, computer_score
+        return f"You Won! Score: You {user_score} | Computer {computer_score}", user_score, computer_score
 
 
     computer_score += 1
-    return f"You Lose! Score: You {user_score} - Computer {computer_score}", user_score, computer_score
+    return f"You Lose! Score: You {user_score} | Computer {computer_score}", user_score, computer_score
 
 
 def is_Win(user, computer):
